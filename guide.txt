@@ -1,0 +1,19 @@
+// 获取当前系统语言环境
+String lang = System.Globalization.CultureInfo.CurrentCulture.Name;
+
+// 创建表示与指定名称关联的特定区域性的 CultureInfo
+Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("ko-KR");
+
+
+区域性名称	环境	默认排序名称和标识符	备用排序名称和标识符
+es-ES	西班牙语(西班牙)	国际：0x00000C0A	传统：0x0000040A
+zh-TW	中文（台湾）	笔划计数：0x00000404	Bopomofo：0x00030404
+zh-CN	中文（中华人民共和国）	发音：0x00000804	笔划计数：0x00020804
+zh-HK	中文(香港特别行政区)	笔划计数：0x00000c04	笔划计数：0x00020c04
+zh-SG	中文（新加坡）	发音：0x00001004	笔划计数：0x00021004
+zh-MO	中文（澳门特别行政区）	发音：0x00001404	笔划计数：0x00021404
+ja-JP	日语（日本）	默认值：0x00000411	Unicode：0x00010411
+ko-KR	韩语(韩国)	默认值：0x00000412	韩语 Xwansung - Unicode：0x00010412
+de-DE	德语（德国）	字典：0x00000407	电话 0x00010407 Book Sort
+hu-HU	匈牙利语(匈牙利)	默认值：0x0000040e	技术排序：0x0001040e
+ka-GE	格鲁吉亚语（格鲁吉亚）	传统：0x00000437	新式排序：0x00010437
